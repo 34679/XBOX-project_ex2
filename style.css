@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url(./font/HelveticaNeue-Roman.otf);
+}
+
+@font-face {
+  font-family: 'HelveticaNeue Bold';
+  src: url(./font/HelveticaNeue-Bold.otf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: "HelveticaNeue", sans-serif;
+}
