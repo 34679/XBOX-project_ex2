@@ -17,3 +17,41 @@
 :root {
   --font-family: "HelveticaNeue", sans-serif;
 }
+
+.container{
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+header{
+  border-radius: 4px;
+background: #373a3c;
+padding: 11px 0 11px 0;
+}
+
+.head1{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.head2{
+  display: flex;
+  gap: 35px;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  gap: 28px;
+}
+
+header a{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+color: rgba(255, 255, 255, 0.5);
+text-decoration: none;
+}
+
