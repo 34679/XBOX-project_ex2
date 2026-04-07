@@ -8,7 +8,7 @@
   src: url(./font/HelveticaNeue-Bold.otf);
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,198 +18,325 @@
   --font-family: "HelveticaNeue", sans-serif;
 }
 
-body{
+body {
   background-color: black;
 }
 
-.container{
+.container {
   max-width: 1080px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
-header{
+/* ========== HEADER ========== */
+header {
   border-radius: 4px;
-background: #373a3c;
-padding: 11px 0 11px 0;
+  background: #373a3c;
+  padding: 11px 0;
 }
 
-.head1{
+.head1 {
   display: flex;
   justify-content: space-between;
-  
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-.head2{
+.head2 {
   display: flex;
   gap: 35px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-ul{
+ul {
   display: flex;
   list-style: none;
   gap: 28px;
 }
 
-header a{
-font-family: var(--font-family);
-font-weight: 400;
-font-size: 16px;
-line-height: 100%;
-color: rgba(255, 255, 255, 0.5);
-text-decoration: none;
+header a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
-header input{
+header input {
   border: 1px solid #ccc;
-border-radius: 4px;
-width: 209px;
-height: 38px;
-background: #fff;
-font-family: var(--font-family);
-font-weight: 400;
-font-size: 16px;
-line-height: 131%;
-color: #435766;
-padding: 9px 0 8px 15px;
+  border-radius: 4px;
+  width: 209px;
+  height: 38px;
+  background: #fff;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  color: #435766;
+  padding: 9px 0 8px 15px;
 }
 
-.sec1{
+/* ========== СЕКЦИЯ 1 (STAR WARS) ========== */
+.sec1 {
   background-image: url(./img/sec1bgimg.png);
   background-repeat: no-repeat;
   background-position: center;
-  height: 642px;
-  margin: 0 auto;
+  background-size: cover;
+  min-height: 642px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px 80px 20px;
 }
 
-.sec1 h2{
+.sec1 h2 {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 36px;
-color: #fff;
-position: relative;
-left: 1070px;
-top: 209px;
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 8px;
 }
 
-.sec1 span{
+.sec1 span {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 24px;
-color: #fff;
-position: relative;
-left: 1070px;
-top: 209px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  display: block;
+  margin-bottom: 30px;
 }
 
-.but1{
-    border: none;
-  border-radius: 4px;
-  width: 136px;
-height: 38px;
-font-family: var(--font-family);
-font-weight: 400;
-font-size: 16px;
-line-height: 131%;
-background: #8dd83d;
-color: #fff;
-position: relative;
-top: 365px;
-left: 930px;
-}
-
-.but2{
+.but1,
+.but2 {
   border: none;
+  border-radius: 4px;
+  height: 38px;
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 16px;
-line-height: 131%;
-color: #fff;
-border-radius: 4px;
-width: 148px;
-height: 38px;
-background: linear-gradient(180deg, #686c6f 0%, #373a3c 100%);
-position: relative;
-top: 365px;
-left: 930px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  cursor: pointer;
+  margin: 0 8px 20px;
 }
 
-.sec1 img{
-  position: relative;
-  left: 488px;
-  top: 545px;
-
+.but1 {
+  width: 136px;
+  background: #8dd83d;
+  color: #fff;
 }
 
-.sec2{
+.but2 {
+  width: 148px;
+  background: linear-gradient(180deg, #686c6f 0%, #373a3c 100%);
+  color: #fff;
+}
+
+.sec1 img {
+  margin-top: 20px;
+}
+
+/* ========== СЕКЦИЯ 2 (КАРТОЧКИ) ========== */
+.sec2 {
   background-image: url(./img/sec2bg.png);
+  background-size: cover;
   text-align: center;
 }
 
-.sec2 img{
+.sec2 img {
   padding-top: 64px;
+  max-width: 100%;
 }
 
-.sec2 h1{
+.sec2 h1 {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 48px;
-color: #fff;
-padding-top: 16px;
+  font-weight: 400;
+  font-size: 48px;
+  color: #fff;
+  padding-top: 16px;
 }
 
-.sec2 span{
+.sec2 span {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 36px;
-color: #fff;
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
 }
 
-.sec2 .cards{
+.cards {
   display: flex;
   gap: 65px;
   margin-top: 42px;
   padding-bottom: 162px;
-  text-align: left
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.sec2 .card {
+.card {
   background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 250px;
+  max-width: 100%;
+  transition: transform 0.2s;
 }
 
-.sec2 .card img{
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
   padding-top: 0;
+  width: 100%;
+  height: auto;
 }
 
-.sec2 .card span{
+.card span {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 18px;
-color: #435766;
-padding: 22px 0 0 22px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #435766;
+  display: block;
+  text-align: left;
+  padding: 22px 0 0 22px;
 }
 
-.sec2 .card h3{
+.card h3 {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 24px;
-color: #435766;
-padding: 13px 0 0 22px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #435766;
+  text-align: left;
+  padding: 13px 0 0 22px;
 }
 
-.sec2 .card button{
+.card button {
   border: none;
   width: 278px;
-height: 60px;
-background: #8dd83d;
-font-family: var(--font-family);
-font-weight: 400;
-font-size: 16px;
-line-height: 131%;
-color: #fff;
-border-radius: 4px;
-margin: 38px 0 27px 0;
+  max-width: calc(100% - 44px);
+  height: 60px;
+  background: #8dd83d;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  color: #fff;
+  border-radius: 4px;
+  margin: 38px 0 27px 0;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
-.sec2 .but{
+.card button:hover {
+  background: #7ac22e;
+}
+
+.but {
   text-align: center;
+}
+
+/* ========== АДАПТИВНОСТЬ ========== */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .head1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .head2 {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  header input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .sec1 {
+    min-height: 500px;
+    padding-bottom: 40px;
+  }
+
+  .sec1 h2 {
+    font-size: 28px;
+  }
+
+  .sec1 span {
+    font-size: 20px;
+  }
+
+  .but1,
+  .but2 {
+    width: 140px;
+    margin: 5px;
+  }
+
+  .sec2 h1 {
+    font-size: 36px;
+  }
+
+  .sec2 span {
+    font-size: 28px;
+  }
+
+  .cards {
+    gap: 30px;
+    padding-bottom: 80px;
+  }
+
+  .card button {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .sec1 h2 {
+    font-size: 24px;
+  }
+
+  .sec1 span {
+    font-size: 18px;
+  }
+
+  .sec2 h1 {
+    font-size: 28px;
+  }
+
+  .sec2 span {
+    font-size: 22px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card span {
+    font-size: 16px;
+  }
+
+  .card button {
+    font-size: 14px;
+    height: 50px;
+  }
 }
