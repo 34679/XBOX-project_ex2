@@ -59,6 +59,20 @@ color: rgba(255, 255, 255, 0.5);
 text-decoration: none;
 }
 
+header input{
+  border: 1px solid #ccc;
+border-radius: 4px;
+width: 209px;
+height: 38px;
+background: #fff;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 131%;
+color: #435766;
+padding: 9px 0 8px 15px;
+}
+
 .sec1{
   background-image: url(./img/sec1bgimg.png);
   background-repeat: no-repeat;
@@ -123,4 +137,79 @@ left: 930px;
   position: relative;
   left: 488px;
   top: 545px;
+
+}
+
+.sec2{
+  background-image: url(./img/sec2bg.png);
+  text-align: center;
+}
+
+.sec2 img{
+  padding-top: 64px;
+}
+
+.sec2 h1{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 48px;
+color: #fff;
+padding-top: 16px;
+}
+
+.sec2 span{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+color: #fff;
+}
+
+.sec2 .cards{
+  display: flex;
+  gap: 65px;
+  margin-top: 42px;
+  padding-bottom: 162px;
+  text-align: left
+}
+
+.sec2 .card {
+  background-color: #fff;
+}
+
+.sec2 .card img{
+  padding-top: 0;
+}
+
+.sec2 .card span{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+color: #435766;
+padding: 22px 0 0 22px;
+}
+
+.sec2 .card h3{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #435766;
+padding: 13px 0 0 22px;
+}
+
+.sec2 .card button{
+  border: none;
+  width: 278px;
+height: 60px;
+background: #8dd83d;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 131%;
+color: #fff;
+border-radius: 4px;
+margin: 38px 0 27px 0;
+}
+
+.sec2 .but{
+  text-align: center;
 }
